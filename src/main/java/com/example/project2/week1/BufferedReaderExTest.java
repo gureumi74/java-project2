@@ -7,7 +7,7 @@ public class BufferedReaderExTest {
         // BufferedReaderEx 선언 및 초기화
         BufferedReaderEx bufferedReaderEx = new BufferedReaderEx();
 
-        // 한 줄 출력
         bufferedReaderEx.readALine();
+
     }
 }
