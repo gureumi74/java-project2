@@ -1,4 +1,6 @@
-package com.example.project2;
+package com.example.project2.test;
+
+import com.example.project2.test.PrintHello;
 
 public class PrintHelloTest {
     public static void main(String[] args) {

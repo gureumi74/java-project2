@@ -1,8 +1,9 @@
-package com.example.project2;
+package com.example.project2.test;
 
-public class ByClassTest {
+public class ByeClassTest {
     public static void main(String[] args) {
         ByeClass byeClass = new ByeClass();
         byeClass.print();
     }
+
 }
