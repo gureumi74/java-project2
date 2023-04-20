@@ -1,4 +1,4 @@
-package com.example.project2.codeup;
+package com.example.project2.codeup.num1001to1017;
 
 public class CodeUp1007 {
     public static void main(String[] args) {
