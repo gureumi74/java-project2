@@ -15,7 +15,5 @@ public class SpaceInvader {
         si.moveLeft();
         si.moveRight();
         si.moveRight(); // 여러 번 해도 location = 1
-
-
     }
 }

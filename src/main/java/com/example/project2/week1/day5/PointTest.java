@@ -17,8 +17,11 @@ public class PointTest {
 
         Point p3 = new Point();
         p3.x = 3;
-        p3.y = 4;
+        p3.y = 2;
         System.out.printf("x: %d, y: %d", p3.x, p3.y);
         System.out.printf("xy가 같은지? %s\n", p3.isSameXy());
+
+        // 두 점사이의 거리
+        System.out.printf("%.3f", p2.getDistance(p3));
     }
 }

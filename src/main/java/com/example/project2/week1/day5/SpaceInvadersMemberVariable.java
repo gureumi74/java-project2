@@ -24,5 +24,4 @@ public class SpaceInvadersMemberVariable {
         simv.moveLeft();
         System.out.printf("최종 위치: %d\n", simv.location);
     }
-
 }

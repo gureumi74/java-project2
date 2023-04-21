@@ -8,14 +8,14 @@ public class Point {
         return x == y;
     }
 
-    float getDistance(Point p) {
+    double getDistance(Point p) {
         // 두 점 사이의 거리 구하기
-        int xD = p.x - this.x;
-        int yD = p.y - this.y;
+        int pX = p.x - this.x;
+        int pY = p.y - this.y;
 
-        return xD;
+        double distance = Math.sqrt(Math.pow(pX, 2) + Math.pow(pY, 2));
+        return distance;
     }
-
     public static void main(String[] args) {
         Point p = new Point();
         System.out.println(p.x);
