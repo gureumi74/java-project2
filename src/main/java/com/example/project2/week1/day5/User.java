@@ -5,4 +5,9 @@ public class User {
     String name;
     String phoneNum;
     int age;
+
+    boolean isAdult() {
+        // 성인 여부 확인
+        return age >= 18;
+    }
 }
