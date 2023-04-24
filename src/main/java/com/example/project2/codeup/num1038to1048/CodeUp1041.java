@@ -10,5 +10,3 @@ public class CodeUp1041 {
         System.out.println((char)(input + 1));
     }
 }
-
-
