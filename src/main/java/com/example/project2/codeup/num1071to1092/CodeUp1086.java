@@ -8,10 +8,10 @@ public class CodeUp1086 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int lowPixel = Integer.parseInt(st.nextToken());
+        int rowPixel = Integer.parseInt(st.nextToken());
         int columnPixel = Integer.parseInt(st.nextToken());
         int bit = Integer.parseInt(st.nextToken());
-        double answer = (long)(lowPixel * columnPixel * bit) / 8388608.0;
+        double answer = (long)(rowPixel * columnPixel * bit) / 8388608.0;
         bw.write(String.format("%.2f MB", answer));
         bw.close();
     }
