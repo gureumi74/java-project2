@@ -8,3 +8,5 @@ public class MinuteSecond {
         System.out.printf("%d분 %d초", minute, remainSeconds);
     }
 }
+
+
