@@ -18,7 +18,6 @@ public class Programmers2 {
         }
 
         return num == 1 ? answer : -1;
-
     }
     public static void main(String[] args) {
         int num = 626331;
