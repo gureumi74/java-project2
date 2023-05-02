@@ -23,6 +23,5 @@ public class Programmers2 {
         int[] arr = {0, 1, 2, 4, 3};
         int[][] queries = {{0, 4, 2}, {0, 3, 2}, {0, 2, 2}};
         System.out.println(Arrays.toString(solution(arr, queries)));
-
     }
 }
