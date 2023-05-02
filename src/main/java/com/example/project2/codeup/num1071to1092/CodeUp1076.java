@@ -10,5 +10,10 @@ public class CodeUp1076 {
         for(int i = 0; i <= input - 'a'; i++) {
             System.out.print((char)('a' + i) + " ");
         }
+
+        // char로 선언해도 가능
+        for(char c = 'a'; c <= input; c++) {
+            System.out.printf("%c ", c);
+        }
     }
 }
