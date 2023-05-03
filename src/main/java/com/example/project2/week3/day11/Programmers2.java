@@ -23,11 +23,9 @@ public class Programmers2 {
                 list.add(i);
             }
         }
-
         if(list.size() == 0) {
             list.add(-1);
         }
-
         return list.stream().mapToInt(x -> (int) x).toArray();
     }
     public static void main(String[] args) {
