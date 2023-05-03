@@ -1,6 +1,8 @@
 package com.example.project2.week3.day13;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ZeroOrFive {
@@ -8,26 +10,24 @@ public class ZeroOrFive {
         int startNum = 5;
         int endNum = 5000;
         List list = new ArrayList();
+        int[] answer = {};
         for(int i = startNum; i <= endNum; i++) {
-            int check = solution(i);
-            if(check != 0) {
-                list.add(check);
+            int check = i;
+            boolean flag = true;
+            while (check > 0) {
+                if (check % 10 != 5 && check % 10 != 0) {
+                    flag = false;
+                    break;
+                }
+                check /= 10;
+            }
+            if(flag) {
+                list.add(i);
             }
         }
 
-        System.out.println(list);
+        answer = list.stream().mapToInt(x -> (int) x).toArray();
 
-    }
-    public static int solution(int num) {
-        int checkNum = num;
-        boolean flag = true;
-        while (checkNum > 0) {
-            if (checkNum % 10 != 5 && checkNum % 10 != 0) {
-                flag = false;
-                break;
-            }
-            checkNum /= 10;
-        }
-        return flag ? num : 0;
+        System.out.println(Arrays.toString(answer));
     }
 }
