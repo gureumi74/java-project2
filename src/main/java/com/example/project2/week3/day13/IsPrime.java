@@ -10,6 +10,17 @@ public class IsPrime {
                 factors++;
             }
         }
-        System.out.printf("%d은 소수입니까? : %b", num, factors == 0);
+        System.out.printf("%d은 소수입니까? : %b\n", num, factors == 0);
+
+        // 루트 n 까지만 구해도 된다.
+        int num2 = 991;
+        boolean check = true;
+        for(int i = 2; i * i <= num2; i++) {
+            if(num2 % i == 0) {
+                check = false;
+            }
+        }
+        System.out.println(check);
+
     }
 }
