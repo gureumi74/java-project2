@@ -17,7 +17,6 @@ public class CodeUp1099 {
         }
         int x = 1; // 첫 시작 부분의 x좌표
         int y = 1;  // 첫 시작 부분의 y좌표
-        boolean noRoad = true;
         while (mazeBox[8][8] != 9) {
             if(mazeBox[x][y] == 2) {
                 mazeBox[x][y] = 9;
